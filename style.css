@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, img {
 	display: block;
 }
 body {
@@ -55,29 +55,84 @@ body {
     text-align: center;
 }
 main {
-    width: 100%;
+    max-width: 340px;
 }
 .logo {
-    margin-bottom: 2rem;
+    width: 4rem;
+    margin: 2rem 40%;
 }
 h1 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    color: hsl(0, 0%, 59%);
 }
 span {
+    color: black;
     font-weight: 700;
 }
 .first-p {
     margin-bottom: 2rem;
+    font-size: 0.8rem;
 }
 input {
-    display: block;
-    width: 19rem;
-    margin: 0 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+    width: 17.2rem;
     margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    caret-color: hsl(223, 100%, 88%);
 }
+input:hover {cursor: pointer;}
+::placeholder {color: hsl(223, 100%, 88%);}
 button {
+    font-family: 'Libre Franklin', sans-serif;
     border: none;
-    width: 19rem;
-    margin: 0 2rem;
+    width: 18.5rem;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    /* font-weight: 600; */
+    transition: all 0.5s;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.illustration-img {
+    width: 100%;
+    margin: 2.5rem 0 7rem;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.icons > i {
+    border-radius: 50%;
+    border: 1px solid hsl(223, 87%, 63%);
+    color: hsl(223, 87%, 63%);
+    transition: all 0.5s;
+}
+.icons > i:hover {
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+#fb {padding: 0.4rem 0.6rem;}
+#tweet {padding: 0.4rem 0.42rem;}
+#ig {padding: 0.4rem 0.47rem;}
+.footer {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 59%);
+}
+
+.input > p {
+    display: none;
+    font-size: 0.7rem;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
 }
