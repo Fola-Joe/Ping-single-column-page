@@ -57,13 +57,15 @@ body {
 main {
     max-width: 340px;
 }
-.logo {
-    width: 4rem;
-    margin: 2rem 40%;
+.logo {width: 4rem; margin-top: 2rem;}
+.logo-div {
+    display: flex;
+    justify-content: center;
 }
 h1 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
     color: hsl(0, 0%, 59%);
 }
 span {
@@ -77,23 +79,22 @@ span {
 input {
     font-family: 'Libre Franklin', sans-serif;
     width: 17.2rem;
-    margin-bottom: 1rem;
     padding: 0.7rem;
     border-radius: 2rem;
     border: 1px solid hsl(223, 100%, 88%);
     caret-color: hsl(223, 100%, 88%);
+    outline: none;
 }
-input:hover {cursor: pointer;}
 ::placeholder {color: hsl(223, 100%, 88%);}
 button {
     font-family: 'Libre Franklin', sans-serif;
+    margin-top: 1rem;
     border: none;
     width: 18.5rem;
     padding: 0.7rem;
     border-radius: 2rem;
     color: white;
     background-color: hsl(223, 87%, 63%);
-    /* font-weight: 600; */
     transition: all 0.5s;
 }
 button:hover {
@@ -130,9 +131,38 @@ button:hover {
     color: hsl(0, 0%, 59%);
 }
 
-.input > p {
+.warning {
     display: none;
     font-size: 0.7rem;
     color: hsl(354, 100%, 66%);
     font-style: italic;
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {max-width: 650px;}
+    .logo {width: 5rem;}
+    h1 {
+        font-size: 3rem;
+    }
+    .first-p {
+        font-size: 1.25rem;
+    }
+    .info {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    input {
+        width: 25rem;
+        padding: 1rem;
+    }
+    button {
+        margin-top: 0;
+        width: 12.5rem;
+        padding: 1rem;
+    }
+    .illustration-img {
+        margin-top: 4rem;
+    }
 }
